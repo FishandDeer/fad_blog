@@ -1,0 +1,13 @@
+/* 引入本地字体 */
+@font-face {
+  font-family: 'LXGWWenKai';
+  src: url('/Users/yyy/code/hexo/fad/themes/butterfly/source/fonts/lxgw/LXGWWenKaiMonoTC-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 全局应用字体 */
+body {
+  font-family: 'LXGWWenKai', sans-serif !important;
+}
