@@ -11,17 +11,17 @@
 
 nav:
   # Navigation bar logo image
-  logo:
+  logo: /img/mylogo.jpg
   display_title: true
   display_post_title: true
   # Whether to fix navigation bar
   fixed: false
 
 menu:
-  # Home: / || fas fa-home
-  # List||fas fa-list:
-  #   Music: /music/ || fas fa-music
-  #   Movie: /movies/ || fas fa-video
+  首页: /
+  了解我: /aboutme/
+  博客: /blog/
+  项目: /project/
 
 # --------------------------------------
 # Code Blocks Settings
@@ -56,17 +56,17 @@ social:
 favicon: /img/favicon.png
 
 avatar:
-  img: /img/butterfly-icon.png
-  effect: false
+  img: /img/touxiang.jpg
+  effect: true
 
 # Disable all banner images
 disable_top_img: false
 
 # If the banner of page not setting, it will show the default_top_img
-default_top_img:
+default_top_img: /img/bg.png
 
 # The banner image of index page
-index_img:
+index_img: /img/bg.png
 
 # The banner image of archive page
 archive_img:
@@ -92,7 +92,8 @@ footer_img: false
 
 # Website Background
 # Can set it to color or image url
-background:
+background: 
+
 
 cover:
   # Disable the cover or not
@@ -148,7 +149,7 @@ index_top_img_height:
 
 # The subtitle on homepage
 subtitle:
-  enable: false
+  enable: true
   # Typewriter Effect
   effect: true
   # Customize typed.js
@@ -164,6 +165,13 @@ subtitle:
   source: false
   # If you close the typewriter effect, the subtitle will only show the first line of sub
   sub:
+    - 你好，我是鱼
+    - Talk is cheep, Show me the code
+    - 人有逆天之时，天无绝人之路
+    - 成败有时，不可丧志
+    - 竹杖芒鞋轻胜马，谁怕，一衰烟雨任平生
+    - 一直向前，一直向上，永不停止
+  
 
 # Article layout on the homepage
 # 1: Cover on the left, info on the right
@@ -283,12 +291,12 @@ aside:
     category: true
   card_author:
     enable: true
-    description:
+    description: 一名热爱技术的小学生，我将在这里分享关于编程、技术探索以及生活感悟的内容。
     button:
       enable: true
       icon: fab fa-github
       text: Follow Me
-      link: https://github.com/xxxxxx
+      link: https://github.com/FishandDeer
   card_announcement:
     enable: true
     content: This is my Blog
@@ -811,11 +819,24 @@ beautify:
 
 # Global font settings
 # Don't modify the following settings unless you know how they work
+# font:
+#   global_font_size: 
+#   code_font_size: 
+#   font_family:
+#   code_font_family:
+
+
+# 字体配置
 font:
-  global_font_size:
-  code_font_size:
-  font_family:
-  code_font_family:
+  global_font_size: 16px
+  font_family: 'LXGW WenKai Screen, LXGW WenKai, 霞鹜文楷, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif'
+  code_font_size: 14px
+  code_font_family: 'LXGW WenKai Mono, JetBrains Mono, Fira Code, Monaco, Consolas, monospace'
+
+# 引入霞鹜文楷字体
+inject:
+  head:
+    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css">
 
 # Font settings for the site title and site subtitle
 blog_title_font:
@@ -1040,11 +1061,11 @@ css_prefix: true
 
 # Inject
 # Insert the code to head (before '</head>' tag) and the bottom (before '</body>' tag)
-inject:
-  head:
-    # - <link rel="stylesheet" href="/xxx.css">
-  bottom:
-    # - <script src="xxxx"></script>
+# inject:
+#   head:
+#     # - <link rel="stylesheet" href="/xxx.css">
+#   bottom:
+#     # - <script src="xxxx"></script>
 
 # CDN Settings
 # Don't modify the following settings unless you know how they work
@@ -1119,3 +1140,7 @@ CDN:
     # valine:
     # waline_css:
     # waline_js:
+
+custom_css:
+  - css/_custom/custom.styl
+
