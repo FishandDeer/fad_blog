@@ -836,7 +836,8 @@ font:
 # 引入霞鹜文楷字体
 inject:
   head:
-    - <link rel="stylesheet" href="/Users/yyy/code/hexo/fad/themes/butterfly/source/css/_fonts/lxgw-font.css">
+    # - <link rel="stylesheet" href="/Users/yyy/code/hexo/fad/themes/butterfly/source/css/_fonts/lxgw-font.css">
+    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css">
 
 # Font settings for the site title and site subtitle
 blog_title_font:
